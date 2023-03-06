@@ -1,6 +1,10 @@
 # Aplicação de bate-papo
 
-Uma aplicação de bate-papo em tempo real que envia e exibe mensagens a um destinatário instantaneamente. Serão utilizados, no back-end, o framework Express.js do JavaScript e as bibliotecas Mongoose e Socket.io para conseguir isso. O front-end será feito utilizando React.
+Uma aplicação de bate-papo em tempo real que envia e exibe mensagens a uma pessoa destinatária instantaneamente. Serão utilizados, no back-end, o framework Express.js do JavaScript e as bibliotecas Mongoose e Socket.io para conseguir isso. O front-end será feito utilizando React.
+
+## Funcionalidades
+
+A aplicação deve permitir que várias pessoas usuárias possam bater papo juntos. As mensagens devem ser atualizadas sem que seja necessário atualizar a página. Numa primeira versão não será feita a autenticação da pessoa usuária.
 
 ## Tecnologias utilizadas
  
