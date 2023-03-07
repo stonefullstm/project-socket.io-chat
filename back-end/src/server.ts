@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import cors from 'cors';
 import express from 'express';
 import bodyParser from 'body-parser';
 const mongoose = require('mongoose');
@@ -8,6 +9,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 app.use(express.json());
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}))
 
@@ -48,6 +50,6 @@ io.on('connection', () =>{
 
 mongoose.connect(dbUrl);
 
-const server = http.listen(3000, () => {
+const server = http.listen(5000, () => {
   console.log('Server is running on port', server.address().port);
 });
